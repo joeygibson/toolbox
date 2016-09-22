@@ -3,7 +3,7 @@ FROM library/debian:jessie
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-    && apt-get -y install netcat htop curl git \
+    && apt-get -y install netcat htop curl vim git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

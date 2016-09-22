@@ -7,12 +7,22 @@ This is a Docker container to be used as a [CoreOS Toolbox](https://github.com/c
 It is based on Debian Jessie, and contains the following additional tools:
 
 * Netcat
+* Vim
 * HTop
 * Curl
 * Git
 * Sparkyfish
 * Docker
 * Docker Compose
+
+as well as some aliases that I like:
+
+    alias ds="ls -lFGskh"
+    alias z=clear
+    alias more=less
+    alias m=less
+    alias top=htop
+    alias fig=docker-compose
 
 ## Using
 
