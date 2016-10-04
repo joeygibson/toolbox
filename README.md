@@ -33,3 +33,16 @@ Edit your `~/.toolboxrc` file to include these lines:
 
 Then run `toolbox` with whatever options you need.
 
+## Setup In cloud-config
+
+If you are using an OS that supports cloud-config, you can add this, and not worry
+about manually editing your `~/.toolboxrc`.
+
+    #cloud-config
+    write_files:
+      - path: /home/core/.toolboxrc
+        owner: core
+        content: |
+          TOOLBOX_DOCKER_IMAGE=joeygibson/toolbox
+          TOOLBOX_DOCKER_TAG=latest
+          TOOLBOX_USER=root
