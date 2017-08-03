@@ -35,7 +35,7 @@ Then run `toolbox` with whatever options you need.
 
 ## Setup In cloud-config
 
-If you are using an OS that supports cloud-config, you can add this, and not worry
+If you are setting up your CoreOS machine through cloud-config, you can add this, and not worry
 about manually editing your `~/.toolboxrc`.
 
     #cloud-config

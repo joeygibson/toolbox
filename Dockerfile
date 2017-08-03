@@ -3,7 +3,7 @@ FROM library/debian:jessie
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-    && apt-get -y install netcat htop curl vim git \
+    && apt-get -y install netcat htop curl vim git tmux \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -19,6 +19,7 @@ RUN curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-com
 RUN chmod +x /usr/local/bin/docker && chmod +x /usr/local/bin/docker-compose
 
 COPY alias.txt /root/.alias
-RUN echo ". /root/.alias" >> /root/.bashrc
+RUN echo ". /root/.alias" >> /root/.bashrc \
+    && echo "export PS1='\[\e[0;33;1m\]\h:\w>\[\e[m\] '" >> /root/.bashrc
 
 
