@@ -14,6 +14,7 @@ It is based on Debian Jessie, and contains the following additional tools:
 * Sparkyfish
 * Docker
 * Docker Compose
+* tmux
 
 as well as some aliases that I like:
 
