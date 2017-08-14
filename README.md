@@ -13,7 +13,6 @@ It is based on Debian Jessie, and contains the following additional tools:
 * Git
 * Sparkyfish
 * Docker
-* Docker Compose
 * tmux
 
 as well as some aliases that I like:
@@ -23,7 +22,6 @@ as well as some aliases that I like:
     alias more=less
     alias m=less
     alias top=htop
-    alias fig=docker-compose
 
 ## Using
 

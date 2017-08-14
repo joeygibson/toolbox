@@ -3,5 +3,4 @@ alias z=clear
 alias more=less
 alias m=less
 alias top=htop
-alias fig=docker-compose
 
